@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Gotu&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title class = "top">Homepage</title>
+</head>
+
+<body>
+  <header>
+    <a href="#main" class="skip">Skip to main content</a>
+    <div class = "navbar">
+    <nav>
+        <ul class="left">
+            <li class="title">Rogue Artbox</li>
+        </ul>
+        <ul class="right">
+          <li><a class = "current" href="index.html">Home</a></li>
+          <li><a href="illustrations.html">Illustrations</a></li>
+          <li><a href="paintings.html">Paintings</a></li>
+        </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main class = "scroll">
+
+    <div class = "container">
+      <div class="something something-1">
+      <h1>From Pixels to Pigments</h1>
+      <p class="fades">
+        My Artistic Odyssey in Digital and Traditional Art
+      </p>
+      </div>
+
+      <div class="something something-2">
+        <h1>Welcome to my art gallery!</h1>
+        <p class="fades">
+            As an artist, I have been passionately creating artwork since I was a child, and this website is a showcase of my lifelong love for art. With separate pages dedicated to my digital illustrations and my physical paintings, I invite you to explore my diverse portfolio. My digital illustrations reflect my creativity and innovation using modern technology, while my physical paintings capture the beauty of traditional art forms. This website is a labor of love, a virtual gallery that showcases my artistic journey and the evolution of my skills. I hope you enjoy browsing through my artwork and appreciate the passion and dedication that goes into each piece. Thank you for joining me on this artistic adventure!
+        </p>
+      </div>
+    </div>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <button onclick="topFunction()" id="myBtn" title="Back to top">Back to Top</button>
+
+    <div id="feedback-main">
+      <div id="feedback-div">
+        <form action="mailto:ishawadhavkar.999@gmail.com" method="post" class="form" id="feedback-form1" name="form1" enctype="multipart/form-data">
+
+          <p class="name">
+            <input name="name" type="name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" required placeholder="Name" id="feedback-name" />
+          </p>
+    
+          <p class="email">
+            <input name="email" type="email" class="validate[required,custom[email]] feedback-input" id="feedback-email" placeholder="Email" required />
+          </p>
+    
+          <p class="text">
+            <textarea name="comment" type="comment" class="validate[required,length[6,300]] feedback-input" id="feedback-comment" required placeholder="Leave a comment! Any constructive feedback is welcome!"></textarea>
+          </p>
+    
+          <div class="feedback-submit">
+            <input type="submit" value="SEND" id="feedback-button-blue" />
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <button id="popup" class="feedback-button" onclick="toggle_visibility()">Feedback</button>
+
+  </main>
+
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <h2 class="thanks"> Thanks for visiting!</h2>
+    <p id="copyright">&copy; Website created and coded by Isha Wadhavkar.</p>
+
+  </footer>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
